@@ -12,10 +12,9 @@ comments: true
 last-updated: 2021-03-07
 ---
 <head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <!-- <meta charset="utf-8"/> -->
 </head>
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
@@ -180,7 +179,6 @@ end
   SubGraph1Flow(4B. If you're)
   SubGraph1Flow -- Not --> Greedy
   SubGraph1Flow -- You Will --> Go Far
-  end
 
   subgraph "Main Graph"
   Node1[1. Oompa] --> Node2[2. Loompa]
@@ -249,6 +247,16 @@ graph TB
   SubGraph1 --> FinalThing[Final Thing]
 end
 ```
+
+
+<div class="mermaid">
+graph TD
+    A[Christmas] -->|Get money| B(Go shopping)
+    B --> C{Let me think}
+    C -->|One| D[Laptop]
+    C -->|Two| E[iPhone]
+    C -->|Three| F[fa:fa-car Car]
+</div>
 
 
 <div class="mermaid">
