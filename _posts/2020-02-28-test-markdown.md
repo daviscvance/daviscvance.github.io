@@ -11,10 +11,10 @@ tags: [markdown, test]
 comments: true
 last-updated: 2021-03-06
 ---
-<head>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+<!-- <head>
+  <script src="/js/mermaid.js"></script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-</head>
+</head> -->
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
@@ -159,7 +159,6 @@ $$
 ## Diagrams / Flowcharts
 ```mermaid
 graph TB
-
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -172,6 +171,36 @@ graph TB
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
 end
+```
+
+```mermaid
+  SubGraph1 --> SubGraph1Flow
+  subgraph "SubGraph 1 Flow"
+  SubGraph1Flow(4B. If you're)
+  SubGraph1Flow -- Not --> Greedy
+  SubGraph1Flow -- You Will --> Go Far
+  end
+
+  subgraph "Main Graph"
+  Node1[1. Oompa] --> Node2[2. Loompa]
+  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
+  SubGraph1 --> FinalThing[4A. Da]
+end
+```
+
+```mermaid
+  SubGraph1 --> SubGraph1Flow
+  subgraph "SubGraph 1 Flow"
+  SubGraph1Flow(4B. If you're)
+  SubGraph1Flow -- Not --> Greedy
+  SubGraph1Flow -- You Will --> Go Far
+  end
+
+  subgraph "Main Graph"
+  Node1[1. Oompa] --> Node2[2. Loompa]
+  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
+  SubGraph1 --> FinalThing[4A. Da]
+  end
 ```
 
 <div class="mermaid">
