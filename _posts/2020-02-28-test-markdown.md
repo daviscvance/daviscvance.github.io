@@ -14,7 +14,10 @@ last-updated: 2021-03-07
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <meta charset="utf-8"/>
 </head>
+
+[[_TOC_]]
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
@@ -38,18 +41,7 @@ head). You can use GitLab Flavored Markdown in the following areas:
 * Markdown documents inside repositories
 * Epics (ULTIMATE)
 
-- [x] Completed task
-- [ ] Incomplete task
-  - [ ] Sub-task 1
-  - [x] Sub-task 2
-  - [ ] Sub-task 3
-
-1. [x] Just going to have to make do with what you can.
-1. [ ] But know that there is a great beyond.
-   1. [ ] For which, you can explore.
-   1. [x] Uses markdown: [kramdown](https://kramdown.gettalong.org/syntax.html)
-          in YAML
-
+[Gitlab Example](https://gitlab.com/gitlab-org/gitlab/blob/master/doc/user/markdown.md)
 
 [^1]: Footnote 1 is just mentioning that I started with
 [md guide's cheat sheet](https://www.markdownguide.org/cheat-sheet/).
@@ -75,14 +67,25 @@ How do you like them apples? <br> Mm yeah.
 
 ---
 
-## Inline Media
+### Inline Media
 ![Do do do dodo](https://i.imgur.com/WsUV4DK.gif)
 
 It can also be centered!
 
 ![Dun Da dun dun Da](https://i.imgur.com/WsUV4DK.gif){: .mx-auto.d-block :}
 
-## Code Blocks
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=VOC3huqHrss
+" target="_blank"><img src="http://img.youtube.com/vi/VOC3huqHrss/0.jpg"
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+### Checklist
+1. [x] Just going to have to make do with what you can.
+1. [ ] But know that there is a great beyond.
+   * [ ] For which, you can explore.
+   * [x] Uses markdown: [kramdown](https://kramdown.gettalong.org/syntax.html)
+          in YAML
+
+### Code Blocks
 Highlighted code block:
 
 ```json
@@ -109,9 +112,8 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-## Boxes
+### Boxes
 > Add all sorts of stuff.
-> [Reference](https://en.wikipedia.org/wiki/Markdown)
 > Boxes, notifications, warnings and errors galore.
 
 ### Notification
@@ -133,10 +135,9 @@ foo(3)
 
 {: .box-error}
 **Error:**
-Don't use these: [Emoji List](https://www.webfx.com/tools/emoji-cheat-sheet/)
+Don't use these: [Emoji List](https://gist.github.com/rxaviers/7360908)
 
 :speak_no_evil:
-
 
 ## Math
 $$
@@ -155,6 +156,14 @@ $$
     \end{array} \right)
 \end{aligned}
 $$
+
+This math is inline $`a^2+b^2=c^2`$.
+
+This is on a separate line
+
+```math
+a^2+b^2=c^2
+```
 
 
 ## Diagrams / Flowcharts
@@ -231,6 +240,23 @@ pie title Pets adopted by volunteers
         A-->C;
         B-->D;
         C-->D;
+```
+
+```mermaid
+graph TB
+
+  SubGraph1 --> SubGraph1Flow
+  subgraph "SubGraph 1 Flow"
+  SubGraph1Flow(SubNode 1)
+  SubGraph1Flow -- Choice1 --> DoChoice1
+  SubGraph1Flow -- Choice2 --> DoChoice2
+  end
+
+  subgraph "Main Graph"
+  Node1[Node 1] --> Node2[Node 2]
+  Node2 --> SubGraph1[Jump to SubGraph1]
+  SubGraph1 --> FinalThing[Final Thing]
+end
 ```
 
 
