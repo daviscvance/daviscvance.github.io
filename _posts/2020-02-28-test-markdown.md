@@ -11,10 +11,13 @@ tags: [markdown, test]
 comments: true
 last-updated: 2021-03-06
 ---
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+</head>
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
-[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)].
+[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll).
 
 # Single Hash Heading {#custom-id}
 This is a collection of markdown for quick referencing. [^1] Markdown is useful.
@@ -41,7 +44,8 @@ You can use GitLab Flavored Markdown in the following areas:
 1. [x] Just going to have to make do with what you can.
 1. [ ] But know that there is a great beyond.
    1. [ ] For which, you can explore.
-   1. [x] Uses markdown: kramdown in YAML
+   1. [x] Uses markdown: [kramdown](https://kramdown.gettalong.org/syntax.html)
+          in YAML
 
 
 [^1]: Footnote 1 is just mentioning that I started with
@@ -64,9 +68,9 @@ Here's a ~~striking~~ly good table:
 | Seven | `RGB(0%,100%,0%)` | Watch it |
 | 999 | `RGBA(0,255,0,0.3)` | Flow |
 
-How do you like them apples? <br>
-Apples
-:  Tasty snack
+`RGBA(0,255,0,0.3)`
+How do you like them apples? <br> Mm yeah.
+`RGBA(0,255,0,0.3)`
 
 ---
 
@@ -76,7 +80,16 @@ It can also be centered!
 
 ![Dun Da dun dun Da](https://i.imgur.com/WsUV4DK.gif){: .mx-auto.d-block :}
 
-And here is the same code with syntax highlighting:
+
+Highlighted code block:
+
+```json
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "age": 25
+}
+```
 
 ```javascript
 var foo = function(bar) {
@@ -94,14 +107,6 @@ var foo = function(x) {
 foo(3)
 {% endhighlight %}
 
-```json
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
-
 ## Boxes
 > Add all sorts of stuff.
 > [Reference](https://en.wikipedia.org/wiki/Markdown)
@@ -110,7 +115,8 @@ foo(3)
 ### Notification
 
 {: .box-note}
-**Note:**  
+**Note:**  Adding a note here to tell you about notes.
+
  - {+ Do add color +}
  - [- but be afraid -]
  - [+ of errors +]
@@ -125,8 +131,29 @@ foo(3)
 
 {: .box-error}
 **Error:**
-Don't use these:
-[Emoji List](https://www.webfx.com/tools/emoji-cheat-sheet/) :speak_no_evil:
+Don't use these: [Emoji List](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+:speak_no_evil:
+
+
+## Math
+$$
+\begin{aligned}
+  & \phi(x,y) = \phi \left(\sum_{i=1}^n x_ie_i, \sum_{j=1}^n y_je_j \right)
+  = \sum_{i=1}^n \sum_{j=1}^n x_i y_j \phi(e_i, e_j) = \\
+  & (x_1, \ldots, x_n) \left( \begin{array}{ccc}
+      \phi(e_1, e_1) & \cdots & \phi(e_1, e_n) \\
+      \vdots & \ddots & \vdots \\
+      \phi(e_n, e_1) & \cdots & \phi(e_n, e_n)
+    \end{array} \right)
+  \left( \begin{array}{c}
+      y_1 \\
+      \vdots \\
+      y_n
+    \end{array} \right)
+\end{aligned}
+$$
+
 
 ## DAG
 ```mermaid

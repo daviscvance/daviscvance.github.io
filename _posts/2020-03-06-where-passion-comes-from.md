@@ -9,7 +9,7 @@ tags: [motivation]
 ---
 # Where Passion Comes From
 
-[Where Passion Comes From | Simon Sinek](https://www.youtube.com/watch?v=zoMQaru8zU4)
+[Where Passion Comes From &#124; Simon Sinek](https://www.youtube.com/watch?v=zoMQaru8zU4)
 
 I could watch this over and over again, In fact I have. In fact, I even wrote
 down the transcript because it was so meaningful. Brilliantly stated by Simon
@@ -31,7 +31,7 @@ in? Please, let me know your thoughts.
 
 
 ## Transcript
-~Roughly:
+~Roughly from the video:
 
 Passion is not an input, it's an output. We're all passionate, just not for the
 same things and we feel it when we are involved in something that is deeply
@@ -40,21 +40,21 @@ when we go to work we experience it. But if you make us do something that we
 feel no personal connection to that is not as helping advance any kind of bigger
 ideal then what we feel is stress.
 
-Passionate people:
-Go on business trips
- - they miss their families
- - they work long hours
- - they don't sleep
+**Passionate people:**
+ - Go on business trips
+ - They miss their families
+ - They work long hours
+ - They don't sleep
 
 and yet it feels worth it.
 
-People who are stressed:
- - go on business trips
- - they miss their families
- - they work long hours
- - they don't sleep
+People who are **stressed:**
+ - Go on business trips
+ - They miss their families
+ - They work long hours
+ - They don't sleep
 
-but it doesn't feel worth it!
+But it doesn't feel worth it!
 
 **Passion is an output not an input like stress is an output not an input**, so
 you can't do what you're passionate about you **find something you believe in**
@@ -83,18 +83,19 @@ the follower; we both see ourselves in service to something bigger than
 ourselves, whether you are the originator of that idea or not is irrelevant.
 What it does is fuel passion, conviction. So we don't have to have a vision but
 we do have to find one and so:
- - read books
- - watch ted talks
- - read articles
- - be in life
- - watch videos
- - go out
- - seek
- - find
- - listen to leaders:
-   - corporate
-   - political
-   - whoever
+ - Read books
+ - Watch ted talks
+ - Read articles
+ - Be in life
+ - Watch videos
+ - Go out
+ - Seek
+ - Find
+ - Listen to leaders:
+   - Corporate
+   - Political
+   - Activist
+   - Whoever
 
 And when something resonates with you, even if you don't know why, then you can
 adopt and take it upon yourself to use your own talents and your own gifts to
