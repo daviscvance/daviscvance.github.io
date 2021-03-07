@@ -13,8 +13,9 @@ last-updated: 2021-03-07
 ---
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-  <meta charset="utf-8"/>
+  <!-- <meta charset="utf-8"/> -->
 </head>
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
@@ -155,16 +156,8 @@ $$
 \end{aligned}
 $$
 
-This math is inline $`a^2+b^2=c^2`$.
-
-This is on a separate line
-
-```math
-a^2+b^2=c^2
-```
-
-
 ## Diagrams / Flowcharts
+
 <div class="mermaid">
 graph TB
   SubGraph1 --> SubGraph1Flow
