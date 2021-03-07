@@ -2,9 +2,11 @@
 layout: post
 title: Where Passion Comes From
 subtitle: Monologue from Simon Sinek
+author: Davis Vance, Simon Sinek
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg
+comments: true
 tags: [motivation]
 ---
 # Where Passion Comes From
@@ -12,18 +14,24 @@ tags: [motivation]
 [Where Passion Comes From &#124; Simon Sinek](https://www.youtube.com/watch?v=zoMQaru8zU4)
 
 I could watch this over and over again, In fact I have. In fact, I even wrote
-down the transcript because it was so meaningful. Brilliantly stated by Simon
-Sinek, find what you believe in, and passion will follow. When you put in effort
-to do a job correctly, you will learn and you will open up opportunities that
-will help you get closer to what you believe in, hard work is rewarded with
-passion (as an output, not an input).
+down the transcript because it was so meaningful to consider this perspective.
+Brilliantly stated by Simon Sinek, find what you believe in, and passion will
+follow. When you put in effort to do a job correctly, you will learn, gain
+trust, and you will open up opportunities that will help you get closer to what
+you believe in, hard work is rewarded with passion (as an output, not an input).
+
+I didn't start playing guitar out of passion, I believed in the words of great
+artists that inspired me. I didn't go into analytics out of passion, I believed
+in the power of data and the impact of technology. What I experience now is
+passion for utilizing and creating value to further learn and get closer to
+impacting the world.
 
 Finding stress in hard work instead of passion? Its challenging to connect to
 what you truly believe in, maybe you just had an epiphany or are experiencing
 someone new that makes you want to change. Start local and work bigger. I
-believe in democratizing data at work, but I believe in more important things
-too. I will continue to work towards those things and be grateful for the
-journey as I go along.
+believe in democratizing data at work, but I believe in a lot more important
+things too that I am not ready for. I will continue to work towards those things
+and be grateful for the journey as I go along.
 
 What do you think? Does passion find you or do you find passion? Is passion
 innate from your values? How do you identify and acknowledge what you believe

@@ -2,19 +2,21 @@
 layout: post
 title: Markdown Template
 subtitle: Useful to copy ideas from
+author: Davis Vance
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
 # cover-img: /assets/img/path.jpg
 # thumbnail-img: /assets/img/thumb.png
 # share-img: /assets/img/path.jpg
-tags: [markdown, test]
+tags: [markdown, cheat_sheets]
 comments: true
 last-updated: 2021-03-07
 ---
 <head>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>mermaid.initialize({startOnLoad:true});</script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  <meta charset="utf-8">
 </head>
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
@@ -157,6 +159,8 @@ $$
 
 ## Diagrams / Flowcharts
 
+Reference: [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/)
+
 <div class="mermaid">
 graph TD
   SubGraph1 --> SubGraph1Flow
@@ -205,21 +209,25 @@ graph TD
   end
 ```
 
-<div class="mermaid">
-graph TB
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(4B. If you're)
-  SubGraph1Flow -- Not --> Greedy
-  SubGraph1Flow -- You Will --> Go Far
-  end
+<html>
+  <body>
+    <div class="mermaid">
+    graph TB
+      SubGraph1 --> SubGraph1Flow
+      subgraph "SubGraph 1 Flow"
+      SubGraph1Flow(4B. If you're)
+      SubGraph1Flow -- Not --> Greedy
+      SubGraph1Flow -- You Will --> Go Far
+      end
 
-  subgraph "Main Graph"
-  Node1[1. Oompa] --> Node2[2. Loompa]
-  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
-  SubGraph1 --> FinalThing[4A. Da]
-  end
-</div>
+      subgraph "Main Graph"
+      Node1[1. Oompa] --> Node2[2. Loompa]
+      Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
+      SubGraph1 --> FinalThing[4A. Da]
+      end
+    </div>
+  </body>
+</html>
 
 <div class="mermaid">
   SubGraph1 --> SubGraph1Flow
@@ -255,6 +263,24 @@ graph TD;
     A-->C;
     B-->D;
     C-->D;
+</div>
+
+<div class="mermaid">
+graph TD;
+    A(Alpha)-->B(Beta);
+    A-->C;
+    B(Beta)-->D(Delta);
+    C-->D;
+</div>
+
+<div class="mermaid">
+graph TD;
+    A(Alpha)-->B(Beta);
+    A-->C;
+    B(Beta)-->D(Delta);
+    C-->D;
+    style A fill:#f9f,stroke:#333,stroke-width:4px
+    style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 </div>
 
 ```mermaid!
@@ -336,3 +362,55 @@ gantt
        Add gantt diagram to demo page      :20h
        Add another diagram to demo page    :48h
 </div>
+
+<div class="mermaid"
+graph TB
+    sq[Square shape] --> ci((Circle shape))
+
+    subgraph A
+        od>Odd shape]-- Two line<br/>edge comment --> ro
+        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
+        di==>ro2(Rounded square shape)
+    end
+
+    %% Notice that no text in shape are added here instead that is appended further down
+    e --> od3>Really long text with linebreak<br>in an Odd shape]
+
+    %% Comments after double percent signs
+    e((Inner / circle<br>and some odd <br>special characters)) --> f(,.?!+-*ز)
+
+    cyr[Cyrillic]-->cyr2((Circle shape Начало));
+
+     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
+     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     class sq,e green
+     class di orange
+</div>
+
+<div class="mermaid">
+  graph LR;
+      A-->B;
+      B-->C;
+      C-->D;
+      click A callback "Tooltip"
+      click B "http://www.github.com" "This is a link"
+      click C call callback() "Tooltip"
+      click D href "http://www.github.com" "This is a link"
+</div>
+
+<script>
+  var callback = function(){
+      alert('A callback was triggered');
+  }
+  var config = {
+      startOnLoad:true,
+      flowchart:{
+          useMaxWidth:true,
+          htmlLabels:true,
+          curve:'cardinal',
+      },
+      securityLevel:'loose',
+  };
+
+  mermaid.initialize(config);
+</script>
