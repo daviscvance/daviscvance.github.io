@@ -24,7 +24,7 @@ I didn't start playing guitar out of passion, I believed in the words of great
 artists that inspired me. I didn't go into analytics out of passion, I believed
 in the power of data and the impact of technology. What I experience now is
 passion for utilizing data and creating value to further learn and get closer to
-impacting the world meaningfully.
+impacting the world in a way that is most meaningful to me.
 
 Finding stress in hard work instead of passion? Its challenging to connect to
 what you truly believe in, maybe you just had an epiphany or are experiencing

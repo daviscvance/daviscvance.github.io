@@ -169,42 +169,23 @@ $$
 
 Reference: [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/)
 
-<html>
-  <body>
-    <div class="mermaid">
-    graph TB
-      SubGraph1 --> SubGraph1Flow
-      subgraph "SubGraph 1 Flow"
-      SubGraph1Flow(4B. If you're)
-      SubGraph1Flow -- Not --> Greedy
-      SubGraph1Flow -- You Will --> Go Far
-      end
-
-      subgraph "Main Graph"
-      Node1[1. Oompa] --> Node2[2. Loompa]
-      Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
-      SubGraph1 --> FinalThing[4A. Da]
-      end
-    </div>
-  </body>
-</html>
-
-
+---
+Flowchart 1
 <div class="mermaid">
 graph TD;
     A(Alpha)-->B(Beta);
     A-->C;
     B(Beta)-->D(Delta);
     C-->D;
-    style A fill:#f9f,stroke:#333,stroke-width:4px
-    style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    style A fill:#f9f, stroke:#333, stroke-width:4px
+    style B fill:#bbf, stroke:#f66, stroke-width:2px, color:#fff, stroke-dasharray: 5 5
     click A callback "Tooltip"
     click B "https://daviscvance.github.io/" "Self reference link"
     click C call callback() "Tooltip"
     click D href "http://www.github.com" "This is a different link"
 </div>
 
-
+Flowchart 2
 <div class="mermaid">
 graph TD
     A[Christmas] -->|Get money| B(Go shopping)
@@ -214,6 +195,9 @@ graph TD
     C -->|Three| F[fa:fa-car Car]
 </div>
 
+---
+
+Gantt Chart
 <div class="mermaid">
 gantt
        dateFormat  YYYY-MM-DD
@@ -249,11 +233,13 @@ gantt
 <div class="mermaid">
 graph TB
     sq[Square shape] --> ci((Circle shape))
+    sq[Square shape] --> RO2
+    sq[Square shape] --> od3
 
-    subgraph A
-        od>Odd shape]-- Two line<br/>edge comment --> ro
-        di{Diamond with <br/> line break} -.-> ro(Rounded<br>square<br>shape)
-        di==>ro2(Rounded square shape)
+    subgraph Flow1
+        ODD>Odd shape]-- Two line<br/>edge comment --> RO
+        DI{Diamond with <br/> line break} -.-> RO(Rounded<br>square<br>shape)
+        DI==>RO2(Rounded square shape)
     end
 
     %% Notice that no text in shape are added here instead that is appended further down
@@ -264,8 +250,8 @@ graph TB
 
     cyr[Cyrillic]-->cyr2((Circle shape Начало));
 
-     classDef green fill:#9f6,stroke:#333,stroke-width:2px;
-     classDef orange fill:#f96,stroke:#333,stroke-width:4px;
+     classDef green fill:#9f6, stroke:#333, stroke-width:2px;
+     classDef orange fill:#f96, stroke:#333, stroke-width:4px;
      class sq,e green
-     class di orange
+     class DI orange
 </div>

@@ -13,8 +13,7 @@ author: Davis C. Vance
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+    - Tags Page: "https://daviscvance.github.io/tags/"
   Author's home: "daviscvance.github.io"
 
 # --- Logo --- #
