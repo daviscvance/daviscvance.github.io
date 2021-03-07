@@ -12,8 +12,8 @@ comments: true
 last-updated: 2021-03-07
 ---
 <head>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script> -->
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </head>
 
@@ -158,7 +158,7 @@ $$
 ## Diagrams / Flowcharts
 
 <div class="mermaid">
-graph TB
+graph TD
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -170,7 +170,7 @@ graph TB
   Node1[1. Oompa] --> Node2[2. Loompa]
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
-end
+  end
 </div>
 
 <div class="mermaid">
@@ -232,7 +232,7 @@ pie title Pets adopted by volunteers
 ```
 
 ```mermaid
-graph TB
+graph TD
 
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
