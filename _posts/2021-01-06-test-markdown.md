@@ -74,9 +74,17 @@ It can also be centered!
 
 ![Dun Da dun dun Da](https://i.imgur.com/WsUV4DK.gif){: .mx-auto.d-block :}
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=VOC3huqHrss
-" target="_blank"><img src="http://img.youtube.com/vi/VOC3huqHrss/0.jpg"
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+Silly video embedded
+<a
+  href="http://www.youtube.com/watch?feature=player_embedded&v=VOC3huqHrss"
+  target="_blank">
+  <img
+    src="http://img.youtube.com/vi/VOC3huqHrss/0.jpg"
+    alt="IMAGE ALT TEXT HERE"
+    width="240"
+    height="180"
+    border="10"/>
+</a>
 
 ### Checklist
 1. [x] Just going to have to make do with what you can.
@@ -161,39 +169,6 @@ $$
 
 Reference: [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/)
 
-
-```mermaid
-graph TD
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(SubNode 1)
-  SubGraph1Flow -- Choice1 --> DoChoice1
-  SubGraph1Flow -- Choice2 --> DoChoice2
-  end
-
-  subgraph "Main Graph"
-  Node1[Node 1] --> Node2[Node 2]
-  Node2 --> SubGraph1[Jump to SubGraph1]
-  SubGraph1 --> FinalThing[Final Thing]
-  end
-```
-
-```mermaid!
-graph TD
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(SubNode 1)
-  SubGraph1Flow -- Choice1 --> DoChoice1
-  SubGraph1Flow -- Choice2 --> DoChoice2
-  end
-
-  subgraph "Main Graph"
-  Node1[Node 1] --> Node2[Node 2]
-  Node2 --> SubGraph1[Jump to SubGraph1]
-  SubGraph1 --> FinalThing[Final Thing]
-  end
-```
-
 <html>
   <body>
     <div class="mermaid">
@@ -214,43 +189,6 @@ graph TD
   </body>
 </html>
 
-<div class="mermaid">
-graph TD
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(4B. If you're)
-  SubGraph1Flow -- Not --> Greedy
-  SubGraph1Flow -- You Will --> Go Far
-
-  subgraph "Main Graph"
-  Node1[1. Oompa] --> Node2[2. Loompa]
-  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
-  SubGraph1 --> FinalThing[4A. Da]
-</div>
-
-<div class="mermaid">
-graph TB
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(4B. If you're)
-  SubGraph1Flow -- Not --> Greedy
-  SubGraph1Flow -- You Will --> Go Far
-  end
-
-  subgraph "Main Graph"
-  Node1[1. Oompa] --> Node2[2. Loompa]
-  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
-  SubGraph1 --> FinalThing[4A. Da]
-  end
-</div>
-
-<div class="mermaid">
-graph TD;
-    A(Alpha)-->B(Beta);
-    A-->C;
-    B(Beta)-->D(Delta);
-    C-->D;
-</div>
 
 <div class="mermaid">
 graph TD;
@@ -260,33 +198,11 @@ graph TD;
     C-->D;
     style A fill:#f9f,stroke:#333,stroke-width:4px
     style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+    click A callback "Tooltip"
+    click B "https://daviscvance.github.io/" "Self reference link"
+    click C call callback() "Tooltip"
+    click D href "http://www.github.com" "This is a different link"
 </div>
-
-
-```mermaid
-    graph TD;
-        A-->B;
-        A-->C;
-        B-->D;
-        C-->D;
-```
-
-```mermaid
-graph TD
-
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(SubNode 1)
-  SubGraph1Flow -- Choice1 --> DoChoice1
-  SubGraph1Flow -- Choice2 --> DoChoice2
-  end
-
-  subgraph "Main Graph"
-  Node1[Node 1] --> Node2[Node 2]
-  Node2 --> SubGraph1[Jump to SubGraph1]
-  SubGraph1 --> FinalThing[Final Thing]
-end
-```
 
 
 <div class="mermaid">
@@ -297,7 +213,6 @@ graph TD
     C -->|Two| E[iPhone]
     C -->|Three| F[fa:fa-car Car]
 </div>
-
 
 <div class="mermaid">
 gantt
@@ -329,7 +244,9 @@ gantt
        Add another diagram to demo page    :48h
 </div>
 
-<div class="mermaid"
+---
+
+<div class="mermaid">
 graph TB
     sq[Square shape] --> ci((Circle shape))
 
@@ -352,31 +269,3 @@ graph TB
      class sq,e green
      class di orange
 </div>
-
-<div class="mermaid">
-  graph LR;
-      A-->B;
-      B-->C;
-      C-->D;
-      click A callback "Tooltip"
-      click B "http://www.github.com" "This is a link"
-      click C call callback() "Tooltip"
-      click D href "http://www.github.com" "This is a link"
-</div>
-
-<script>
-  var callback = function(){
-      alert('A callback was triggered');
-  }
-  var config = {
-      startOnLoad:true,
-      flowchart:{
-          useMaxWidth:true,
-          htmlLabels:true,
-          curve:'cardinal',
-      },
-      securityLevel:'loose',
-  };
-
-  mermaid.initialize(config);
-</script>
