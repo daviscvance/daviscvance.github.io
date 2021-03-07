@@ -17,8 +17,6 @@ last-updated: 2021-03-07
   <meta charset="utf-8"/>
 </head>
 
-[[_TOC_]]
-
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
 [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll). This is the
