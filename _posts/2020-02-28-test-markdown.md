@@ -11,10 +11,10 @@ tags: [markdown, test]
 comments: true
 last-updated: 2021-03-06
 ---
-<!-- <head>
-  <script src="/js/mermaid.js"></script>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
   <script type="text/javascript" async src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-</head> -->
+</head>
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
