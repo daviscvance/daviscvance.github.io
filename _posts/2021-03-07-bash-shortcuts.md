@@ -8,11 +8,12 @@ comments: true
 last-updated: 2021-03-07
 ---
 
-## Table
-
 Here’s a table of the shortcuts in Bash thanks to
 [Jeffrey Tse](https://github.com/jeffreytse/jekyll-jeffreytse-blog/blob/master/_posts/2016-10-12-bash-shortcuts-table.md)
 and his resources.
+
+
+### Table
 
 | Shortcuts     | Description                                                        |
 | ------------- | ------------------------------------------------------------------ |
@@ -78,7 +79,7 @@ and his resources.
 | \$\[Tab][Tab] | List all system variables                                          |
 
 
-## References
+### References
 
 - [Bash Shortcuts](https://kapeli.com/cheat_sheets/Bash_Shortcuts.docset/Contents/Resources/Documents/index)
 - [How-to: Bash Keyboard Shortcuts](https://ss64.com/bash/syntax-keyboard.html)

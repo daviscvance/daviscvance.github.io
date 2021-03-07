@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: Nothin' special, really.
+author: Davis Vance
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+I'm bringing analytical foundations, insights, and operational excellence to a
+Revenue Strategy & Operations organization for Google's super-growth SMB Ads
+business.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+I enjoy collecting new data to build knowledge of the business from engineered
+systems (data lakes, data engines, sales platform), then democratizing the
+knowledge for data analysis to produce more efficient technical strategy
+decisions, effective storytelling, and business alignment to make sales easy.
 
-What else do you need?
+I'm interested in data engineering, artificial intelligence, finance, economics,
+psychology, Earth & biological sciences, philosophy, and things that are
+relevant. Please connect with me and send me a note!
 
-### My story
-
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+In my free time, I am often playing acoustic guitar (big music lover), reading,
+listening to podcasts, hiking and enjoying California's nature (sometimes
+Oregon's too!).

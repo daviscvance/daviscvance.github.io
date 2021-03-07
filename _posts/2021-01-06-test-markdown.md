@@ -161,21 +161,6 @@ $$
 
 Reference: [Mermaid documentation](https://mermaid-js.github.io/mermaid/#/)
 
-<div class="mermaid">
-graph TD
-  SubGraph1 --> SubGraph1Flow
-  subgraph "SubGraph 1 Flow"
-  SubGraph1Flow(4B. If you're)
-  SubGraph1Flow -- Not --> Greedy
-  SubGraph1Flow -- You Will --> Go Far
-  end
-
-  subgraph "Main Graph"
-  Node1[1. Oompa] --> Node2[2. Loompa]
-  Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
-  SubGraph1 --> FinalThing[4A. Da]
-  end
-</div>
 
 ```mermaid
 graph TD
@@ -230,6 +215,7 @@ graph TD
 </html>
 
 <div class="mermaid">
+graph TD
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -243,6 +229,7 @@ graph TD
 </div>
 
 <div class="mermaid">
+graph TB
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -255,14 +242,6 @@ graph TD
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
   end
-</div>
-
-<div class="mermaid">
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
 </div>
 
 <div class="mermaid">
@@ -283,19 +262,6 @@ graph TD;
     style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 </div>
 
-```mermaid!
-pie title Pets adopted by volunteers
-"Dogs" : 386
-"Cats" : 85
-"Rats" : 35
-```
-
-@startmermaid
-pie title Pets adopted by volunteers
-"Dogs" : 386
-"Cats" : 85
-"Rats" : 35
-@endmermaid
 
 ```mermaid
     graph TD;
