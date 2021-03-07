@@ -9,7 +9,7 @@ gh-badge: [star, fork, follow]
 # share-img: /assets/img/path.jpg
 tags: [markdown, test]
 comments: true
-last-updated: 2021-03-06
+last-updated: 2021-03-07
 ---
 <head>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.0.0/mermaid.min.js"></script>
@@ -18,23 +18,25 @@ last-updated: 2021-03-06
 
 Big shoutout to [Dean Attali (daattali)](https://github.com/daattali) for making
 this all this possible with
-[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll).
+[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll). This is the
+start of my documentation journey.
 
 # Single Hash Heading {#custom-id}
 This is a collection of markdown for quick referencing. [^1] Markdown is useful.
 It helps write `HTML code` with _simplicity_. [^footnote-42]
 
-Unfortunately, some of these features may not work outside of GitLab.
-You can use GitLab Flavored Markdown in the following areas:
+Unfortunately, some of these features may not work outside of GitLab. And also,
+some of these features only work in the blog (mermaid and mathjax scripts in
+head). You can use GitLab Flavored Markdown in the following areas:
 
-- Comments
-- Issues
-- Merge requests
-- Milestones
-- Snippets (the snippet must be named with a .md extension)
-- Wiki pages
-- Markdown documents inside repositories
-- Epics (ULTIMATE)
+* Comments
+* Issues
+* Merge requests
+* Milestones
+* Snippets (the snippet must be named with a .md extension)
+* Wiki pages
+* Markdown documents inside repositories
+* Epics (ULTIMATE)
 
 - [x] Completed task
 - [ ] Incomplete task
@@ -62,26 +64,25 @@ You can use GitLab Flavored Markdown in the following areas:
 
 Here's a ~~striking~~ly good table:
 
-| Number | Color? | Other |
+| Number | Color?(jk) | Other |
 | :--- | :------: | ---: |
 | Five | `#FF0000AA` | Hey |
 | 100 | `RGB(0,255,0)` | Ho |
 | Seven | `RGB(0%,100%,0%)` | Watch it |
 | 999 | `RGBA(0,255,0,0.3)` | Flow |
 
-`RGBA(0,255,0,0.3)`
 How do you like them apples? <br> Mm yeah.
-`RGBA(0,255,0,0.3)`
 
 ---
 
+## Inline Media
 ![Do do do dodo](https://i.imgur.com/WsUV4DK.gif)
 
 It can also be centered!
 
 ![Dun Da dun dun Da](https://i.imgur.com/WsUV4DK.gif){: .mx-auto.d-block :}
 
-
+## Code Blocks
 Highlighted code block:
 
 ```json
@@ -126,7 +127,7 @@ foo(3)
 ### Warning
 
 {: .box-warning}
-**Warning:** Hurry up or you will be late! :snail:
+**Warning:** Take your time, Hurry up! :snail:
 
 ### Error
 
@@ -157,7 +158,7 @@ $$
 
 
 ## Diagrams / Flowcharts
-```mermaid
+<div class="mermaid">
 graph TB
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
@@ -171,9 +172,9 @@ graph TB
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
 end
-```
+</div>
 
-```mermaid
+<div class="mermaid">
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -185,10 +186,9 @@ end
   Node1[1. Oompa] --> Node2[2. Loompa]
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
-end
-```
+</div>
 
-```mermaid
+<div class="mermaid">
   SubGraph1 --> SubGraph1Flow
   subgraph "SubGraph 1 Flow"
   SubGraph1Flow(4B. If you're)
@@ -201,7 +201,7 @@ end
   Node2 --> SubGraph1[3. Doompety (Jump to SubGraph1]
   SubGraph1 --> FinalThing[4A. Da]
   end
-```
+</div>
 
 <div class="mermaid">
 graph TD;
@@ -211,6 +211,20 @@ graph TD;
     C-->D;
 </div>
 
+```mermaid!
+pie title Pets adopted by volunteers
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 35
+```
+
+@startmermaid
+pie title Pets adopted by volunteers
+"Dogs" : 386
+"Cats" : 85
+"Rats" : 35
+@endmermaid
+
 ```mermaid
     graph TD;
         A-->B;
@@ -219,29 +233,30 @@ graph TD;
         C-->D;
 ```
 
+
 <div class="mermaid">
 gantt
        dateFormat  YYYY-MM-DD
        title Adding GANTT diagram functionality to mermaid
 
        section A section
-       Completed task            :done,    des1, 2014-01-06,2014-01-08
-       Active task               :active,  des2, 2014-01-09, 3d
+       Completed task            :done,    des1, 2021-01-06, 2021-01-08
+       Active task               :active,  des2, 2021-01-09, 3d
        Future task               :         des3, after des2, 5d
        Future task2              :         des4, after des3, 5d
 
        section Critical tasks
-       Completed task in the critical line :crit, done, 2014-01-06,24h
+       Completed task in the critical line :crit, done, 2021-01-06, 24h
        Implement parser and jison          :crit, done, after des1, 2d
-       Create tests for parser             :crit, active, 3d
+       Create tests for parser             :crit, active,           3d
        Future task in critical line        :crit, 5d
        Create tests for renderer           :2d
        Add to mermaid                      :1d
 
        section Documentation
        Describe gantt syntax               :active, a1, after des1, 3d
-       Add gantt diagram to demo page      :after a1  , 20h
-       Add another diagram to demo page    :doc1, after a1  , 48h
+       Add gantt diagram to demo page      :after a1,               20h
+       Add another diagram to demo page    :doc1, after a1,         48h
 
        section Last section
        Describe gantt syntax               :after doc1, 3d
